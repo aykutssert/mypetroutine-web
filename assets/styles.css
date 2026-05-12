@@ -39,6 +39,12 @@ a {
   padding: 22px 0;
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
 .brand {
   display: inline-flex;
   align-items: center;
@@ -65,13 +71,27 @@ a {
   font-size: 0.95rem;
 }
 
+.language-toggle {
+  min-width: 46px;
+  height: 34px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
 .nav a,
 .footer a {
   text-decoration: none;
 }
 
 .nav a:hover,
-.footer a:hover {
+.footer a:hover,
+.language-toggle:hover {
   color: var(--accent);
 }
 
@@ -302,9 +322,14 @@ h2 {
     flex-direction: column;
   }
 
-  .nav {
+  .header-actions {
     width: 100%;
     justify-content: space-between;
+  }
+
+  .nav {
+    flex: 1;
+    justify-content: flex-start;
   }
 
   .hero {

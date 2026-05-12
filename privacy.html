@@ -3,56 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Privacy Policy - My Pet Routine</title>
-  <meta name="description" content="Privacy Policy for My Pet Routine.">
+  <title data-i18n-title="privacy.meta.title">Privacy Policy - My Pet Routine</title>
+  <meta name="description" data-i18n-description="privacy.meta.description" content="Privacy Policy for My Pet Routine.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>My Pet Routine</span></a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="support.html">Support</a>
-    </nav>
+    <a class="brand" href="index.html"><span class="brand-mark">🐾</span><span data-i18n="app.name">My Pet Routine</span></a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Change language">TR</button>
+    </div>
   </header>
 
   <main class="page">
-    <p class="eyebrow">Legal</p>
-    <h1>Privacy Policy</h1>
-    <p class="updated">Last updated: May 12, 2026</p>
+    <p class="eyebrow" data-i18n="legal.eyebrow">Legal</p>
+    <h1 data-i18n="privacy.title">Privacy Policy</h1>
+    <p class="updated" data-i18n="legal.updated">Last updated: May 12, 2026</p>
 
     <section>
-      <h2>Overview</h2>
-      <p>My Pet Routine is designed as a local-first pet care tracking app. The app helps you save pet profiles, care logs, reminders, weight records, notes, and related information on your device.</p>
+      <h2 data-i18n="privacy.overview.title">Overview</h2>
+      <p data-i18n="privacy.overview.body">My Pet Routine is designed as a local-first pet care tracking app. The app helps you save pet profiles, care logs, reminders, weight records, notes, and related information on your device.</p>
     </section>
 
     <section>
-      <h2>Data We Store</h2>
-      <p>The app may store information you enter, including pet names, species, photos, care records, reminder details, notes, and weight history. This information is stored locally on your device.</p>
+      <h2 data-i18n="privacy.data.title">Data We Store</h2>
+      <p data-i18n="privacy.data.body">The app may store information you enter, including pet names, species, photos, care records, reminder details, notes, and weight history. This information is stored locally on your device.</p>
     </section>
 
     <section>
-      <h2>Data Sharing</h2>
-      <p>We do not sell your data. My Pet Routine does not require an account and does not intentionally send your pet records to our servers. If you export, share, back up, or send a report, that action is controlled by you through iOS sharing and system services.</p>
+      <h2 data-i18n="privacy.sharing.title">Data Sharing</h2>
+      <p data-i18n="privacy.sharing.body">We do not sell your data. My Pet Routine does not require an account and does not intentionally send your pet records to our servers. If you export, share, back up, or send a report, that action is controlled by you through iOS sharing and system services.</p>
     </section>
 
     <section>
-      <h2>Notifications</h2>
-      <p>If you allow notifications, the app uses local notifications to remind you about care tasks. Notification permission can be changed anytime in iOS Settings.</p>
+      <h2 data-i18n="privacy.notifications.title">Notifications</h2>
+      <p data-i18n="privacy.notifications.body">If you allow notifications, the app uses local notifications to remind you about care tasks. Notification permission can be changed anytime in iOS Settings.</p>
     </section>
 
     <section>
-      <h2>Contact</h2>
-      <p>For privacy questions, use the support contact below.</p>
-      <p><a class="contact-link" href="support.html">Contact support</a></p>
+      <h2 data-i18n="legal.contact.title">Contact</h2>
+      <p data-i18n="privacy.contact.body">For privacy questions, use the support contact below.</p>
+      <p><a class="contact-link" href="support.html" data-i18n="legal.contact.link">Contact support</a></p>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© 2026 My Pet Routine</span>
-    <span class="footer-links"><a href="index.html">Home</a><a href="terms.html">Terms</a><a href="support.html">Support</a></span>
+    <span data-i18n="app.copyright">© 2026 My Pet Routine</span>
+    <span class="footer-links"><a href="index.html" data-i18n="nav.home">Home</a><a href="terms.html" data-i18n="nav.terms">Terms</a><a href="support.html" data-i18n="nav.support">Support</a></span>
   </footer>
+  <script src="assets/i18n.js"></script>
   <script src="assets/contact.js"></script>
 </body>
 </html>

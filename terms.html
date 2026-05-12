@@ -3,56 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Terms of Use - My Pet Routine</title>
-  <meta name="description" content="Terms of Use for My Pet Routine.">
+  <title data-i18n-title="terms.meta.title">Terms of Use - My Pet Routine</title>
+  <meta name="description" data-i18n-description="terms.meta.description" content="Terms of Use for My Pet Routine.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="index.html"><span class="brand-mark">🐾</span><span>My Pet Routine</span></a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="support.html">Support</a>
-    </nav>
+    <a class="brand" href="index.html"><span class="brand-mark">🐾</span><span data-i18n="app.name">My Pet Routine</span></a>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Change language">TR</button>
+    </div>
   </header>
 
   <main class="page">
-    <p class="eyebrow">Legal</p>
-    <h1>Terms of Use</h1>
-    <p class="updated">Last updated: May 12, 2026</p>
+    <p class="eyebrow" data-i18n="legal.eyebrow">Legal</p>
+    <h1 data-i18n="terms.title">Terms of Use</h1>
+    <p class="updated" data-i18n="legal.updated">Last updated: May 12, 2026</p>
 
     <section>
-      <h2>Use of the App</h2>
-      <p>My Pet Routine is provided to help organize pet care information and reminders. You are responsible for the accuracy of the information you enter and how you use it.</p>
+      <h2 data-i18n="terms.use.title">Use of the App</h2>
+      <p data-i18n="terms.use.body">My Pet Routine is provided to help organize pet care information and reminders. You are responsible for the accuracy of the information you enter and how you use it.</p>
     </section>
 
     <section>
-      <h2>Not Veterinary Advice</h2>
-      <p>The app is not a substitute for professional veterinary advice, diagnosis, or treatment. Always consult a qualified veterinarian for medical concerns or emergencies.</p>
+      <h2 data-i18n="terms.advice.title">Not Veterinary Advice</h2>
+      <p data-i18n="terms.advice.body">The app is not a substitute for professional veterinary advice, diagnosis, or treatment. Always consult a qualified veterinarian for medical concerns or emergencies.</p>
     </section>
 
     <section>
-      <h2>Availability</h2>
-      <p>We aim to keep the app reliable, but we do not guarantee uninterrupted availability or that every reminder will be delivered in every device state or system configuration.</p>
+      <h2 data-i18n="terms.availability.title">Availability</h2>
+      <p data-i18n="terms.availability.body">We aim to keep the app reliable, but we do not guarantee uninterrupted availability or that every reminder will be delivered in every device state or system configuration.</p>
     </section>
 
     <section>
-      <h2>Limitation of Liability</h2>
-      <p>To the maximum extent permitted by law, My Pet Routine is provided as is, without warranties of any kind. We are not liable for losses caused by reliance on app data or reminders.</p>
+      <h2 data-i18n="terms.liability.title">Limitation of Liability</h2>
+      <p data-i18n="terms.liability.body">To the maximum extent permitted by law, My Pet Routine is provided as is, without warranties of any kind. We are not liable for losses caused by reliance on app data or reminders.</p>
     </section>
 
     <section>
-      <h2>Contact</h2>
-      <p>For questions about these terms, use the support contact below.</p>
-      <p><a class="contact-link" href="support.html">Contact support</a></p>
+      <h2 data-i18n="legal.contact.title">Contact</h2>
+      <p data-i18n="terms.contact.body">For questions about these terms, use the support contact below.</p>
+      <p><a class="contact-link" href="support.html" data-i18n="legal.contact.link">Contact support</a></p>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© 2026 My Pet Routine</span>
-    <span class="footer-links"><a href="index.html">Home</a><a href="privacy.html">Privacy</a><a href="support.html">Support</a></span>
+    <span data-i18n="app.copyright">© 2026 My Pet Routine</span>
+    <span class="footer-links"><a href="index.html" data-i18n="nav.home">Home</a><a href="privacy.html" data-i18n="nav.privacy">Privacy</a><a href="support.html" data-i18n="nav.support">Support</a></span>
   </footer>
+  <script src="assets/i18n.js"></script>
   <script src="assets/contact.js"></script>
 </body>
 </html>

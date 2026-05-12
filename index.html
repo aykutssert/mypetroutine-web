@@ -3,32 +3,35 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Pet Routine</title>
-  <meta name="description" content="My Pet Routine helps you track pet care logs, reminders, weight, health records, and routines locally on your device.">
+  <title data-i18n-title="home.meta.title">My Pet Routine</title>
+  <meta name="description" data-i18n-description="home.meta.description" content="My Pet Routine helps you track pet care logs, reminders, weight, health records, and routines locally on your device.">
   <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="My Pet Routine home">
       <span class="brand-mark">🐾</span>
-      <span>My Pet Routine</span>
+      <span data-i18n="app.name">My Pet Routine</span>
     </a>
-    <nav class="nav" aria-label="Main navigation">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="support.html">Support</a>
-    </nav>
+    <div class="header-actions">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+        <a href="terms.html" data-i18n="nav.terms">Terms</a>
+        <a href="support.html" data-i18n="nav.support">Support</a>
+      </nav>
+      <button class="language-toggle" type="button" data-language-toggle aria-label="Change language">TR</button>
+    </div>
   </header>
 
   <main>
     <section class="hero">
       <div class="hero-copy">
-        <p class="eyebrow">Pet Care Tracker</p>
-        <h1>Simple care tracking for every pet routine.</h1>
-        <p class="lead">Track feeding, care logs, health notes, weight changes, and reminders in one calm, local-first app.</p>
+        <p class="eyebrow" data-i18n="home.eyebrow">Pet Care Tracker</p>
+        <h1 data-i18n="home.title">Simple care tracking for every pet routine.</h1>
+        <p class="lead" data-i18n="home.lead">Track feeding, care logs, health notes, weight changes, and reminders in one calm, local-first app.</p>
         <div class="actions">
-          <a class="button primary" href="privacy.html">Privacy Policy</a>
-          <a class="button secondary" href="support.html">Get Support</a>
+          <a class="button primary" href="privacy.html" data-i18n="home.privacyCta">Privacy Policy</a>
+          <a class="button secondary" href="support.html" data-i18n="home.supportCta">Get Support</a>
         </div>
       </div>
       <div class="phone-preview" aria-label="App feature preview">
@@ -36,22 +39,22 @@
         <div class="preview-card active">
           <span class="icon">🍽</span>
           <div>
-            <strong>Feeding</strong>
-            <small>Breakfast logged for Milo</small>
+            <strong data-i18n="home.preview.feeding.title">Feeding</strong>
+            <small data-i18n="home.preview.feeding.body">Breakfast logged for Milo</small>
           </div>
         </div>
         <div class="preview-card">
           <span class="icon">💊</span>
           <div>
-            <strong>Medication</strong>
-            <small>Reminder today at 18:30</small>
+            <strong data-i18n="home.preview.medication.title">Medication</strong>
+            <small data-i18n="home.preview.medication.body">Reminder today at 18:30</small>
           </div>
         </div>
         <div class="preview-card">
           <span class="icon">📈</span>
           <div>
-            <strong>Weight Trend</strong>
-            <small>Healthy progress this month</small>
+            <strong data-i18n="home.preview.weight.title">Weight Trend</strong>
+            <small data-i18n="home.preview.weight.body">Healthy progress this month</small>
           </div>
         </div>
       </div>
@@ -60,29 +63,30 @@
     <section class="features" aria-label="Features">
       <article>
         <span>📝</span>
-        <h2>Care history</h2>
-        <p>Keep feeding, grooming, vaccine, medicine, weight, and general notes organized per pet.</p>
+        <h2 data-i18n="home.feature.history.title">Care history</h2>
+        <p data-i18n="home.feature.history.body">Keep feeding, grooming, vaccine, medicine, weight, and general notes organized per pet.</p>
       </article>
       <article>
         <span>🔔</span>
-        <h2>Reminders</h2>
-        <p>Schedule important routines and use quick notification actions when a reminder arrives.</p>
+        <h2 data-i18n="home.feature.reminders.title">Reminders</h2>
+        <p data-i18n="home.feature.reminders.body">Schedule important routines and use quick notification actions when a reminder arrives.</p>
       </article>
       <article>
         <span>🔒</span>
-        <h2>Local-first</h2>
-        <p>Your pet records are designed to stay on your device unless you choose to export or share them.</p>
+        <h2 data-i18n="home.feature.privacy.title">Local-first</h2>
+        <p data-i18n="home.feature.privacy.body">Your pet records are designed to stay on your device unless you choose to export or share them.</p>
       </article>
     </section>
   </main>
 
   <footer class="footer">
-    <span>© 2026 My Pet Routine</span>
+    <span data-i18n="app.copyright">© 2026 My Pet Routine</span>
     <span class="footer-links">
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-      <a href="support.html">Support</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Privacy</a>
+      <a href="terms.html" data-i18n="nav.terms">Terms</a>
+      <a href="support.html" data-i18n="nav.support">Support</a>
     </span>
   </footer>
+  <script src="assets/i18n.js"></script>
 </body>
 </html>
